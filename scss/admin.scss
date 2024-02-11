@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+textarea {
+    resize: none;
+    padding: 0;
+}
+textarea:focus {
+    min-height: 150px;
+}
+input[value='удалить'], input[value='изменить'], input[value='Добавить запись'] {
+    cursor: pointer;
+}
+input {
+    height: 52px;
+}
+.admin__categories {
+    padding: 40px 0 40px 0;
+    .panel__logo {
+        margin-bottom: 50px;
+    }
+
+   
+}
+.table *, textarea, input, form *{
+    border: 1px solid;
+    // margin-right: 10px;
+}
+.table, .ca__row, .category__add, .goods__item_add {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+
+.admin__categories {
+    .table_id, .ca__item_id , .category__add_id{width: 5%;}
+    .table_name, .ca__item_name, .category__add_name {width: 15%;}
+    .table_desc, .ca__item_desc, .category__add_desc {width: 15%;}
+    .table_img, .ca__item_img, .category__add_img {width: 25%;}
+    .table_parent, .ca__item_parent, .category__add_parent {width: 15%;}
+    .ca__item_update, .ca__item_delete {
+        min-width: 10%;
+    }
+}
+.admin__goods {
+    .table_id, .ca__item_id , .goods__add_id{width: 5%;}
+    .table_name, .ca__item_name, .category__add_name {width: 10%;}
+    .table_text, .ca__item_text, .goods__add_text {width: 15%;}
+    .table_img, .ca__item_img, .goods__add_img {width: 20%;}
+    .table_parent, .ca__item_parent, .category__add_parent {width: 10%;}
+    .table_rate, .ca__item_rate, .goods__add_rate {width: 5%;}
+    .table_in-stock, .goods__add_in-stock, .ca__item_in-stock {width: 5%;}
+    .table_price, .goods__add_price, .ca__item_price {width: 15%;}
+    .table_cat, .goods__add_categories, .ca__item_category {width: 15%;}
+    .ca__item_update, .ca__item_delete {
+        min-width: 6%;
+    }
+}
+.ca__row {
+    margin-bottom: 20px;
+}
+
+.button {
+    &_add {
+        width: 13%;
+    }
+}
+
