@@ -2,6 +2,7 @@
 
 application/cache/*
 !application/cache/index.html
+/node_modules
 
 application/logs/*
 !application/logs/index.html
